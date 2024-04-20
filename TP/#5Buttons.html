@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome link-->
+    <script src="https://kit.fontawesome.com/8eb1542e0f.js" crossorigin="anonymous"></script>
+    <!--Font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Buttons</title>
+</head>
+<body>
+    <h1 class="center lime-text text-darken-2">Buttons</h1>
+    <div class="divider"></div>
+    <div class="container">
+    <p>There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.</p>
+    </div>
+
+    <div class="container">
+        <h3 class="lime-text text-accent-4">Raised</h3>
+        
+            <a class="waves-effect waves-light btn yellow">Download</a>
+            <a class="waves-effect waves-light btn yellow"><i class="material-icons left fa-solid fa-download"></i>Download</a>
+            <a class="waves-effect waves-light btn yellow"><i class="material-icons right fa-solid fa-download"></i>Download</a>
+
+        <br><br>
+
+        <h3 class="lime-text text-accent-4">Floating</h3>
+
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons fa-solid fa-cart-plus"></i></a>
+
+        <br><br>
+        <h5 class="lime-text text-lighten-1">Floating Action Button</h5>
+        <p>See lower right</p>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+              <i class="large material-icons fa-solid fa-gear"></i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red"><i class="material-icons fa-solid fa-cloud-arrow-down"></i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons fa-solid fa-list-check"></i></a></li>
+              <li><a class="btn-floating green"><i class="material-icons fa-solid fa-comments"></i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons fa-solid fa-book-bookmark"></i></a></li>
+            </ul>
+        </div>
+
+        <br><br>
+        <h3 class="lime-text text-accent-4">Flat</h3>
+        <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+        <a class="waves-effect waves-teal btn-flat">Download</a>
+
+        <br><br>
+        <h3 class="lime-text text-accent-4">Submit Button</h3>
+        <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+        <button class="btn waves-effect waves-light deep-orange" type="submit" name="action">Submit
+            <i class="material-icons right fa-solid fa-circle-chevron-right"></i>
+        </button>
+
+        <br><br>
+        <h3 class="lime-text text-accent-4">Large</h3>
+        <p>This button has a larger height for buttons that need more attention.</p>
+        <a class="waves-effect waves-light btn-large brown lighten-1">Download</a>
+        <a class="waves-effect waves-light btn-large brown lighten-1"><i class="material-icons left fa-solid fa-download"></i>Download</a>
+        <a class="waves-effect waves-light btn-large brown lighten-1"><i class="material-icons right fa-solid fa-download"></i>Download</a>
+
+        <br><br>
+        <h3 class="lime-text text-accent-4">Small</h3>
+        <p>When mouse and keyboard are the primary input methods, this smaller button is useful for denser UI layouts.</p>
+        <a class="waves-effect waves-light btn-small blue-grey lighten-1">Download</a>
+        <a class="waves-effect waves-light btn-small blue-grey lighten-1"><i class="material-icons left fa-solid fa-download"></i>Download</a>
+        <a class="waves-effect waves-light btn-small blue-grey lighten-1"><i class="material-icons right fa-solid fa-download"></i>Download</a>
+
+        <br><br>
+        <h3 class="lime-text text-accent-4">Disabled</h3>
+        <p>This style can be applied to all button types</p>
+        <a class="btn-large disabled">Download</a>
+        <a class="btn disabled">Download</a>
+        <a class="btn-flat disabled">Download</a>
+        <a class="btn-floating disabled"><i class="material-icons fa-solid fa-cart-plus"></i></a>
+
+
+
+
+    <div style="height: 1000px;"></div>
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                $('.fixed-action-btn').floatingActionButton();
+        });
+        </script>
+
+</body>
+</html>
