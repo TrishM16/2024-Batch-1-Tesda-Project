@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome link-->
+    <script src="https://kit.fontawesome.com/8eb1542e0f.js" crossorigin="anonymous"></script>
+    <!--Font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Materialize Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard - Admin</title>
+</head>
+<body>
+    
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+            <div class="container">
+                <a href="" class="brand-logo black-text">Home</a>
+                <a href="" class="sidenav-trigger black-text" data-target="mobile-demo"><i class="fa-solid fa-bars"></i></a>
+                <ul class="right">
+                    <li>
+                        <a href="" class="black-text"><i class="fa-solid fa-gear"></i></a>
+                    </li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="" class="black-text">Buy Now</a>
+                    </li>
+                    <li>
+                        <a href="" class="black-text"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Dashborad-->
+    <br>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Revenue</h6>
+                    <p class="card-value">$12,476.00</p>
+                    <span class="green-text"><i class="fa-solid fa-angle-up"></i>12%</span>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Clicks</h6>
+                    <p class="card-value">11,893</p>
+                    <span class="green-text"><i class="fa-solid fa-angle-up"></i>8%</span>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Users</h6>
+                    <p class="card-value">230,649</p>
+                    <span class="red-text"><i class="fa-solid fa-angle-down"></i>2%</span>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Conversion Rate</h6>
+                    <p class="card-value">0.24%</p>
+                    <span class="red-text"><i class="fa-solid fa-angle-down"></i>9%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+          <!--Chart panel-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel">
+                    <div class="row center">
+                        <div class="col s4">
+                            <h6 class="dashboard-title">Revenue</h6>
+                            <p class="card-value">$12,476.00</p>
+                            <span><i class="fa-solid fa-angle-up"></i>12%</span>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="dashboard-title">Users</h6>
+                            <p class="card-value">2024</p>
+                            <span><i class="fa-solid fa-angle-up"></i>8%</span>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="dashboard-title">CTR</h6>
+                            <p class="card-value">0.20%</p>
+                            <span><i class="fa-solid fa-angle-up"></i>2%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="JS/chart.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('.tabs').tabs();
+        });
+    </script>
+
+    
+</body>
+</html>
