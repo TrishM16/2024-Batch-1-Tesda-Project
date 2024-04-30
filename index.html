@@ -13,293 +13,186 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
-    <title>Dashboard - Admin</title>
+    <title>Radiant Roast - Home Page</title>
 </head>
 <body>
-    
-<!--Nav Bar-->
-    <div class="navbar-fixed">
-        <nav class="white">
+    <!--Nav Bar-->
+    <div class="">
+        <nav class="brown darken-2">
             <div class="container">
             <div class="nav-wrapper">
-                <a href="" class="brand-logo black-text">Home</a>
+                <a href="index.html" class="brand-logo white-text">Radiant Roast</a>
 
-                <a href="#" data-target="slide-out" class="sidenav-trigger">
-                    <i class="material-icons black-text">menu</i>
+                <a href="#" data-target="menu-demo" class="sidenav-trigger">
+                    <i class="fa-solid fa-bars "></i>
                 </a>
-                <ul class="right">
-                    <li>
-                        <a href="" class="black-text"><i class="fa-solid fa-gear"></i></a>
-                    </li>
-                </ul>
-
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="" class="black-text">Buy Now</a>
-                    </li>
-                    <li>
-                        <a href="" class="black-text"><i class="fa-solid fa-bell"></i></a>
-                    </li>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             </div>
         </nav>
-    </div>
-
-<!--SideNav-->
-
-    <ul id="slide-out" class="sidenav light-blue lighten-4 black-text">
-        <div class="container">
-            <div class="row">
-                <div class="col s3">
-                    <h5>
-                        <i class="fa-brands fa-vaadin small sidenav-logo"></i>
-                    </h5>
-                </div>
-                <div class="col s8">
-                    <h5 class="sidenav-logo">Admin</h5>
-                </div>
+        <ul id="menu-demo" class="sidenav" >
+            <div class="container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </div>
-        </div>
-        <div class="divider black"></div>
-        <ul class="collapsible expandable">
+        </ul>
+    </div>
+    <!--Navbar End-->
+
+    <!--Slider-->
+    <div class="slider">
+        <ul class="slides">
             <li>
-                <div class="collapsible-header">
-                    PAGES <i class="material-icons right arrow-drop">arrow_downward</i>
-                </div>
-                <div class="collapsible-body light-blue lighten-5">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-table-columns"></i>Dashboard</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-list"></i>Fixed Chart</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-table-cells"></i>Grid</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-comments"></i>Chat</a></li>
-                    </ul>
+                <img class="images" src="images/carousel-1.jpg" >
+                <div class="caption center-align">
+                    <h1 style="color: burlywood;">SERVING COFFEE</h1>
+                    <h5 class="light grey-text text-lighten-3">SINCE 2024</h5>
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">
-                    CHARTS <i class="material-icons right arrow-drop">arrow_downward</i>
-                </div>
-                <div class="collapsible-body light-blue lighten-5">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-chart-gantt"></i>Line Charts</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-chart-simple"></i>Bar Charts</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-chart-area"></i>Area Charts</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-chart-pie"></i>Doughnut Charts</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-money-bill-trend-up"></i>Financial Charts</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-hand-pointer"></i>Interactive Charts</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header">
-                    TABLES <i class="material-icons right arrow-drop">arrow_downward</i>
-                </div>
-                <div class="collapsible-body light-blue lighten-5">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-arrow-trend-up"></i>Fullscreen with Chart</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-table"></i>Table with Custom Elements</a></li>
-                    </ul>
-                </div>
-                <div class="collapsible-header">
-                    CALENDAR <i class="material-icons right arrow-drop">arrow_downward</i>
-                </div>
-                
-                <div class="collapsible-header">
-                    HEADERS <i class="material-icons right arrow-drop">arrow_downward</i>
-                </div>
-                <div class="collapsible-body light-blue lighten-5">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-arrow-trend-up"></i>Fullscreen with Chart</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-table"></i>Table with Custom Elements</a></li>
-                    </ul>
-                </div>
-                <div class="collapsible-header">
-                    ACCOUNT <i class="material-icons right arrow-drop">arrow_downward</i>
-                </div>
-                <div class="collapsible-body light-blue lighten-5">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-arrow-trend-up"></i>Log In</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-table"></i>Settings</a></li>
-                    </ul>
+                <img class="images" src="images/carousel-3.jpg">
+                <div class="caption center-align">
+                    <h5>ALSO SERVING</h5>
+                    <h1 style="color: burlywood;">DESSERTS</h1>
                 </div>
             </li>
         </ul>
-    </ul>
+    </div>
 
-<!--Dashborad-->
     <br>
+
+    <!--ABOUT US-->
     <div class="container">
-        <h2>Dashboard</h2>
-        <div class="row">
-            <div class="col s12 m6 l3">
-                <div class="card-panel">
-                    <h6 class="dashboard-title">Revenue</h6>
-                    <p class="card-value">$12,476.00</p>
-                    <span class="green-text"><i class="fa-solid fa-angle-up"></i>12%</span>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card-panel">
-                    <h6 class="dashboard-title">Clicks</h6>
-                    <p class="card-value">11,893</p>
-                    <span class="green-text"><i class="fa-solid fa-angle-up"></i>8%</span>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card-panel">
-                    <h6 class="dashboard-title">Users</h6>
-                    <p class="card-value">230,649</p>
-                    <span class="red-text"><i class="fa-solid fa-angle-down"></i>2%</span>
-                </div>
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card-panel">
-                    <h6 class="dashboard-title">Conversion Rate</h6>
-                    <p class="card-value">0.24%</p>
-                    <span class="red-text"><i class="fa-solid fa-angle-down"></i>9%</span>
-                </div>
-            </div>
+        <div class="section-title center-align">
+            <h4 style="letter-spacing: 5px; color: goldenrod;">ABOUT US</h4>
+            <h2>Serving Since 2024</h2>
+        </div>
+        <div class="row" style="font-family: Arial, Helvetica, sans-serif;">
+            <h1>Our Story</h1>
+            <h5 class="center-align">Welcome to "Radiant Roast" where every cup tells a story and every sip brings people together.</h5>
+            <p>Our journey began with a simple passion for great coffee and a deep-rooted desire to create a space where people could escape the chaos of everyday life and find solace in a warm, welcoming environment.</p>
+            <a href="about.html" class="btn btn-secondary font-weight-bold brown lighten-2 center-align">Learn More</a>
         </div>
     </div>
 
-          <!--Chart panel-->
+    <br><br>
+
+    <!--MENU-->
+    <hr class="rounded" width="80%">
     <div class="container">
+        <div class="section-title center-align">
+            <h4 style="letter-spacing: 5px; color: goldenrod;">MENU & PRICING</h4>
+            <h2>Affordable Pricing</h2>
+        </div>
         <div class="row">
-            <div class="col s12">
-                <div class="card-panel">
-                    <div class="row center">
-                        <div class="col s4">
-                            <h6 class="dashboard-title">Revenue</h6>
-                            <p class="card-value">$12,476.00</p>
-                            <span><i class="fa-solid fa-angle-up"></i>12%</span>
-                        </div>
-                        <div class="col s4">
-                            <h6 class="dashboard-title">Users</h6>
-                            <p class="card-value">2024</p>
-                            <span><i class="fa-solid fa-angle-up"></i>9%</span>
-                        </div>
-                        <div class="col s4">
-                            <h6 class="dashboard-title">CTR</h6>
-                            <p class="card-value">0.20%</p>
-                            <span><i class="fa-solid fa-angle-up"></i>4%</span>
-                        </div>
-                        <div class="col s12">
-                            <div class="card-panel z-depth-0" id="chartContainer" style="height: 370px; width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            <h4 class="">Hot Coffee</h4>
+            <div class="col s12 m8 offset-m2 card-panel center-align">
+                <div class="col s3">
+                    <img src="images/menu-1.jpg" class="circle responsive-img" style="margin-top: 5px;">
+                </div>
+                <div class="col s9">
+                    <h5>₱₱₱</h5>
+                    <h5>Black Coffee</h5>
+                </div>
+            </div>
+            <div class="col s12 m8 offset-m2 card-panel center-align">
+                <div class="col s3">
+                    <img src="images/menu-2.jpg" class="circle responsive-img" style="margin-top: 5px;">
+                </div>
+                <div class="col s9">
+                    <h5>₱₱₱</h5>
+                    <h5>Cafe Latte</h5>
+                </div>
+            </div>
+            <div class="col s12 m8 offset-m2 card-panel center-align">
+                <div class="col s3">
+                    <img src="images/menu-3.jpg" class="circle responsive-img" style="margin-top: 5px;">
+                </div>
+                <div class="col s9">
+                    <h5>₱₱₱</h5>
+                    <h5>Hazelnut Coffee</h5>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!--Chart Updates-->
-
-    <div class="container">
         <div class="row">
-            <div class="col s12 m6">
-                <div class="card-panel">
-                    <div class="row">
-                        <div class="col s4">
-                            <h5>Updates</h5>
-                            <span class="red white-text">Refund</span>
-                            <p>Chang</p>
-                            <h5>Updates</h5>
-                            <span class="green white-text">Purchase</span>
-                            <p>Chang</p>
-                            <h5>Updates</h5>
-                            <span class="red white-text">Refund</span>
-                            <p>Chang</p>
-                        </div>
-                        <div class="col s8">
-                            <p>45$ refunded to Alan</p>
-                            <span>14 minutes ago</span>
-                            <p>45$ refunded to Alan</p>
-                            <span>14 minutes ago</span>
-                            <p>45$ refunded to Alan</p>
-                            <span>14 minutes ago</span>
-                        </div>
-                    </div>
+            <h4 class="">Iced Coffee</h4>
+            <div class="col s12 m8 offset-m2 card-panel center-align">
+                <div class="col s3">
+                    <img src="images/iced3.jpg" class="circle responsive-img" style="margin-top: 3px;">
                 </div>
-                <div class="card-panel">
-                    <h5>Stacked Bar Chart</h5>
-                    <div class="card-panel z-depth-0">
-                        <img src="images/Screenshot3.png" alt="" class="responsive-img">
-                    </div>
+                <div class="col s9">
+                    <h5>₱₱₱</h5>
+                    <h5>Iced Coffee</h5>
                 </div>
             </div>
-            <div class="col s12 m6 card-panel z-depth-0">
-                <img src="images/Screenshot2.png" alt="" class="responsive-img">
-                <div class="card-panel">
-                    <img src="images/Screenshot4.png" alt="" class="responsive-img z-depth-0">
+            <div class="col s12 m8 offset-m2 card-panel center-align">
+                <div class="col s3">
+                    <img src="images/iced1.jpg" class="circle responsive-img"  style="margin-top: 5px;">
+                </div>
+                <div class="col s9">
+                    <h5>₱₱₱</h5>
+                    <h5>Salted Caramel</h5>
+                </div>
+            </div>
+            <div class="col s12 m8 offset-m2 card-panel center-align">
+                <div class="col s3">
+                    <img src="images/iced2.jpg" class="circle responsive-img" style="margin-top: 3px;">
+                </div>
+                <div class="col s9">
+                    <h5>₱₱₱</h5>
+                    <h5>Iced Cafe Latte</h5>
                 </div>
             </div>
         </div>
+        <div class="card-panel" style="background-image: url(images/bg.jpg);">
+            <p class="flow-text" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: bisque;">We also offer other services. To know more, please click Learn More.</p>
+            <a href="menu.html" class="btn btn-secondary font-weight-bold brown lighten-2 center-align">Learn More</a>
+        </div>
     </div>
 
-
-    <div style="height: 300px;"></div>
+    <!-- Back to Top -->
+    <div class="fixed-action-btn">
+        <a href="#" class="btn-floating btn-large back-to-top brown"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+    
+    <div style="height: 200px;"></div>
 
     <footer class="page-footer white z-depth-4">
         <div class="container">
           <div class="row">
-            <div class="col s6 m3">
-                <img src="images/materialize-logo.png" alt="" class="responsive-img">
-                <p class="black-text">Made with love by Materialize.</p>
+            <div class="col s12 m4 brown-text">
+                <h5 class=" text-uppercase">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, Cabuyao City, Laguna</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+63 934 567 8900</p>
+                <p><i class="fa fa-envelope mr-2"></i>radiantroast@gmail.com</p>
             </div>
-            <div class="col s6 m3">
-                <h5 class="black-text">About</h5>
-                <a href="" class="grey-text">Blog</a>
-                <br>
-                <a href="" class="grey-text">Pricing</a>
-                <br>
-                <a href="" class="grey-text">Docs</a>
+            <div class="col s12 m5 brown-text">
+                <h5 class=" text-uppercase">Follow Us</h5>
+                    <a class="btn btn-lg" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-lg-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg  btn-lg-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg  btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="col s6 m3">
-                <h5 class="black-text">Connect</h5>
-                <a href="" class="grey-text">Community</a>
-                <br>
-                <a href="" class="grey-text">Subscribe</a>
-                <br>
-                <a href="" class="grey-text">Email</a>
-            </div>
-            <div class="col s6 m3">
-                <h5 class="black-text">Contact</h5>
-                <a href="" class="grey-text">Twitter</a>
-                <br>
-                <a href="" class="grey-text">Facebook</a>
-                <br>
-                <a href="" class="grey-text">GitHub</a>
+            <div class="col s12 m3 brown-text">
+                <h5 class="text-uppercase ">Open Hours</h5>
+                <div>
+                    <h6 class="text-white text-uppercase">Sunday - Thursday</h6>
+                    <p>8:00 AM - 10.00 PM</p>
+                    <h6 class="text-white text-uppercase">Friday - Saturday</h6>
+                    <p>12:00 PM - 3.00 AM</p>
             </div>
           </div>
         </div>
         <div class="footer-copyright">
           <div class="container black-text">
-          © 2014 Copyright Text
-          <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+          © 2024 Copyright
           </div>
         </div>
       </footer>
@@ -309,17 +202,13 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-    <script src="JS/chart.js"></script>
 
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
-            $('.collapsible').collapsible({
-                accordion: false
-            });
+            $('.slider').slider();
+            $('.fixed-action-btn').floatingActionButton();
         });
     </script>
-
-    
 </body>
 </html>
